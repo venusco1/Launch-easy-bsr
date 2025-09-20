@@ -302,6 +302,17 @@
     <!-- About Start -->
     <div id="about" class="container-fluid about pb-5">
         <div class="container pb-5">
+            <!-- Gallery Category Filters -->
+            <div class="text-center mb-4">
+                <div class="btn-group gallery-filters" role="group" aria-label="Gallery Categories">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="vessel">Vessel</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="ro">RO</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="uv">UV</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="uf">UF</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="solar">Solar</button>
+                </div>
+            </div>
             <div class="row g-5">
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div>
@@ -675,42 +686,71 @@
                 <p class="mb-0">Explore our gallery showcasing advanced water purification systems, sustainable energy solutions, and successful projects that highlight our commitment to quality and innovation.</p>
             </div>
             <div class="row g-4 align-items-stretch">
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                <!-- Example gallery items with categories (add more as needed) -->
+                <div class="col-lg-6 col-md-12 wow fadeInUp gallery-product" data-wow-delay="0.2s" data-category="vessel ro">
                     <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm">
-                        <img src="img/gallery-1.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery 1" style="min-height:260px;object-fit:cover;">
+                        <img src="img/gallery-1.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Vessel & RO System" style="min-height:260px;object-fit:cover;">
                         <div class="search-icon position-absolute top-50 start-50 translate-middle">
                             <a href="img/gallery-1.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="row g-4 h-100">
-                        <div class="col-md-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm">
-                                <img src="img/gallery-2.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery 2" style="min-height:120px;object-fit:cover;">
-                                <div class="search-icon position-absolute top-50 start-50 translate-middle">
-                                    <a href="img/gallery-2.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm">
-                                <img src="img/gallery-3.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery 3" style="min-height:120px;object-fit:cover;">
-                                <div class="search-icon position-absolute top-50 start-50 translate-middle">
-                                    <a href="img/gallery-3.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm mt-4 mt-md-0">
-                                <img src="img/gallery-4.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery 4" style="min-height:120px;object-fit:cover;">
-                                <div class="search-icon position-absolute top-50 start-50 translate-middle">
-                                    <a href="img/gallery-4.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
-                                </div>
-                            </div>
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp gallery-product" data-wow-delay="0.4s" data-category="ro uv">
+                    <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm">
+                        <img src="img/gallery-2.png" class="img-fluid w-100 h-100 object-fit-cover" alt="RO & UV System" style="min-height:120px;object-fit:cover;">
+                        <div class="search-icon position-absolute top-50 start-50 translate-middle">
+                            <a href="img/gallery-2.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp gallery-product" data-wow-delay="0.6s" data-category="uf vessel">
+                    <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm">
+                        <img src="img/gallery-3.png" class="img-fluid w-100 h-100 object-fit-cover" alt="UF & Vessel Filter" style="min-height:120px;object-fit:cover;">
+                        <div class="search-icon position-absolute top-50 start-50 translate-middle">
+                            <a href="img/gallery-3.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp gallery-product" data-wow-delay="0.8s" data-category="solar">
+                    <div class="gallery-item h-100 position-relative overflow-hidden rounded shadow-sm mt-4 mt-md-0">
+                        <img src="img/gallery-4.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Solar Solution" style="min-height:120px;object-fit:cover;">
+                        <div class="search-icon position-absolute top-50 start-50 translate-middle">
+                            <a href="img/gallery-4.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                .gallery-filters .btn {
+                    min-width: 90px;
+                    margin: 0 4px 8px 4px;
+                }
+                .gallery-filters .btn.active {
+                    color: #fff;
+                    background: #0a2540;
+                    border-color: #0a2540;
+                }
+            </style>
+            <script>
+                // Gallery filter logic
+                document.addEventListener('DOMContentLoaded', function() {
+                    var filterButtons = document.querySelectorAll('.gallery-filters .btn');
+                    var galleryItems = document.querySelectorAll('.gallery-product');
+                    filterButtons.forEach(function(btn) {
+                        btn.addEventListener('click', function() {
+                            filterButtons.forEach(function(b) { b.classList.remove('active'); });
+                            btn.classList.add('active');
+                            var filter = btn.getAttribute('data-filter');
+                            galleryItems.forEach(function(item) {
+                                var categories = item.getAttribute('data-category').split(' ');
+                                if (filter === 'all' || categories.includes(filter)) {
+                                    item.style.display = '';
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                        });
+                    });
+                });
+            </script>
             </div>
             <style>
                 .gallery .gallery-item {
