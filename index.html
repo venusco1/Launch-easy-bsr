@@ -179,7 +179,7 @@
 
 
         <!-- Enquiry Form Section Start -->
-        <section class="enquiry-section py-5 bg-white position-relative" style="z-index:2;">
+        <section class="enquiry-section p-3 bg-white position-relative" style="z-index:2;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-xl-6">
@@ -209,44 +209,44 @@
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100 py-2 px-5">Submit Request</button>
+                                        <button type="submit" class="btn btn-primary w-100 py-2 px-5">Submit</button>
                                     </div>
                                 </div>
                             </form>
-                                <script>
-                                // WhatsApp integration for the enquiry form
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    var enquiryForm = document.querySelector('.enquiry-form-wrapper form');
-                                    if (enquiryForm) {
-                                        enquiryForm.addEventListener('submit', function(e) {
-                                            e.preventDefault();
-                                            var name = document.getElementById('enquiry-name').value.trim();
-                                            var email = document.getElementById('enquiry-email').value.trim();
-                                            var phone = document.getElementById('enquiry-phone').value.trim();
-                                            var serviceSelect = document.getElementById('enquiry-service');
-                                            var service = '';
-                                            if (serviceSelect) {
-                                                var selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
-                                                if (selectedOption && selectedOption.value !== 'Select Service') {
-                                                    service = selectedOption.text;
-                                                }
+                            <script>
+                            // WhatsApp integration for the enquiry form
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var enquiryForm = document.querySelector('.enquiry-form-wrapper form');
+                                if (enquiryForm) {
+                                    enquiryForm.addEventListener('submit', function(e) {
+                                        e.preventDefault();
+                                        var name = document.getElementById('enquiry-name').value.trim();
+                                        var email = document.getElementById('enquiry-email').value.trim();
+                                        var phone = document.getElementById('enquiry-phone').value.trim();
+                                        var serviceSelect = document.getElementById('enquiry-service');
+                                        var service = '';
+                                        if (serviceSelect) {
+                                            var selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
+                                            if (selectedOption && selectedOption.value !== 'Select Service') {
+                                                service = selectedOption.text;
                                             }
-                                            var message =
-                                                'Hello BSR Team,%0A%0A' +
-                                                'I am interested in your services and would like to request more information or a quote.%0A%0A' +
-                                                'My details are as follows:%0A' +
-                                                'Name: ' + encodeURIComponent(name) + '%0A' +
-                                                'Email: ' + encodeURIComponent(email) + '%0A' +
-                                                'Phone: ' + encodeURIComponent(phone) + '%0A' +
-                                                'Service Interested: ' + encodeURIComponent(service) + '%0A%0A' +
-                                                'Thank you!';
-                                            var whatsappNumber = '7034800520';
-                                            var waUrl = 'https://wa.me/' + whatsappNumber + '?text=' + message;
-                                            window.open(waUrl, '_blank');
-                                        });
-                                    }
-                                });
-                                </script>
+                                        }
+                                        var message =
+                                            'Hello BSR Team,%0A%0A' +
+                                            'I am interested in your services and would like to request more information or a quote.%0A%0A' +
+                                            'My details are as follows:%0A' +
+                                            'Name: ' + encodeURIComponent(name) + '%0A' +
+                                            'Email: ' + encodeURIComponent(email) + '%0A' +
+                                            'Phone: ' + encodeURIComponent(phone) + '%0A' +
+                                            'Service Interested: ' + encodeURIComponent(service) + '%0A%0A' +
+                                            'Thank you!';
+                                        var whatsappNumber = '7034800520';
+                                        var waUrl = 'https://wa.me/' + whatsappNumber + '?text=' + message;
+                                        window.open(waUrl, '_blank');
+                                    });
+                                }
+                            });
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -705,9 +705,9 @@
                     <div class="projects-filters-scroll d-inline-flex flex-nowrap w-100 justify-content-center">
                         <button class="btn btn-outline-primary mx-1 mb-2" data-filter="all">All</button>
                         <button class="btn btn-outline-primary mx-1 mb-2" data-filter="vessel">Vessels</button>
-                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="construction">UV & UF</button>
-                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="repairs">Repairs</button>
-                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="design">Design</button>
+                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="Dispenser">Dispensers</button>
+                        <!-- <button class="btn btn-outline-primary mx-1 mb-2" data-filter="repairs">Repairs</button>
+                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="design">Design</button> -->
                     </div>
                 </div>
                 <div class="row g-4 projects-grid">
@@ -738,6 +738,86 @@
                                 <img src="img/vessel-3.png" class="card-img-top rounded-top" alt="vessel 3">
                                 <a href="img/vessel-3.png" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a>
                                 <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">13-54 VESSAL IRON, HEARDNESS, ALKALINITY, TERBIDITY REMOVER</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="vessel">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/vessel-4.jpg" class="card-img-top rounded-top" alt="vessel 4">
+                                <a href="img/vessel-4.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">16-65 VESSAL + 20 PREFILTER + 20 JAMBO PREFILTER WITH PUMB + IRON,HEARDNESS, ALKALINITY,TERBIDITY REMOVER + With CLORINETION</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 5 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-1.png" class="card-img-top rounded-top" alt="cooler 1">
+                                <a href="img/cooler-1.png" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">MATERIAL BODY FULLY SS 304, SHEET USED FOR TANK SS 304, NORMAL TANK - SS 304 0.8MM, HOT TANK - SS 304 1 MM, COLD TANK - SS 304 0.8 MM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 6 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-2.png" class="card-img-top rounded-top" alt="cooler 2">
+                                <a href="img/cooler-2.png" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">Metal Body Water Dispenser – Normal & Cool Drinking Water Options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-3.jpg" class="card-img-top rounded-top" alt="cooler 3">
+                                <a href="img/cooler-3.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">NEO, VISTA, ELITE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-4.jpg" class="card-img-top rounded-top" alt="cooler 4">
+                                <a href="img/cooler-4.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">CUBE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-5.jpg" class="card-img-top rounded-top" alt="cooler 4">
+                                <a href="img/cooler-5.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">FRIO, HYDEA series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-6.jpg" class="card-img-top rounded-top" alt="cooler 6">
+                                <a href="img/cooler-6.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">EDGE PRO, CLASSIC CLASSIC PRIME series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/cooler-7.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/cooler-7.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div>
                             </div>
                         </div>
                     </div>
