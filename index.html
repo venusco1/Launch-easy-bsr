@@ -67,42 +67,49 @@
     <!-- Navbar & Hero Start -->
     <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="display-6 text-dark">BSR</h1>
-                <!-- <img src="img/logo.png" alt="Logo"> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
+            <div class="d-flex w-100 align-items-center justify-content-between flex-row" style="gap:1.2rem;">
+                <a href="index.html" class="navbar-brand p-0 mb-0" style="flex-shrink:0;">
+                    <h1 class="display-6 text-primary mb-0" style="font-size:2rem;">BSR</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <div class="navbar-nav flex-row align-items-center justify-content-center flex-grow-1" style="gap: 1.2rem;">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <!-- <a href="#about" class="nav-item nav-link">About</a> -->
                     <a href="service.html" class="nav-item nav-link">Service</a>
-                    <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
-                    
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="feature.html" class="dropdown-item">Our Feature</a>
-                            <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                            <a href="attraction.html" class="dropdown-item">Attractions</a>
-                            <a href="package.html" class="dropdown-item">Ticket Packages</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div> -->
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3" style="flex-shrink:0;">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> 
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a> -->
             </div>
+            <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a> -->
+            <style>
+                .navbar .d-flex {
+                    flex-wrap: nowrap !important;
+                }
+                .navbar-nav {
+                    gap: 1.2rem;
+                }
+                @media (max-width: 991.98px) {
+                    .navbar .d-flex {
+                        flex-direction: row !important;
+                        flex-wrap: nowrap !important;
+                        align-items: center !important;
+                        justify-content: space-between !important;
+                    }
+                    .navbar-nav {
+                        flex-direction: row !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        gap: 1.2rem;
+                    }
+                    .navbar-brand h1 {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            </style>
         </nav>
     </div>
     <!-- Navbar & Hero End -->
@@ -277,7 +284,7 @@
                 <!-- Feature 1 -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="feature-item">
-                        <img src="img/5.png" class="img-fluid rounded w-100" alt="Industrial RO and Vessel Filters">
+                        <img src="img/gallery-1.png" class="img-fluid rounded w-100" alt="Industrial RO and Vessel Filters">
                         <div class="feature-content p-4">
                             <div class="feature-content-inner">
                                 <h4 class="text-white">Water Filtration</h4>
@@ -293,7 +300,7 @@
                 <!-- Feature 2 -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="feature-item">
-                        <img src="img/4.png" class="img-fluid rounded w-100" alt="RO UV UF Water Purifiers">
+                        <img src="img/gallery-2.png" class="img-fluid rounded w-100" alt="RO UV UF Water Purifiers">
                         <div class="feature-content p-4">
                             <div class="feature-content-inner">
                                 <h4 class="text-white">RO, UV & UF Purifiers</h4>
@@ -309,7 +316,7 @@
                 <!-- Feature 3 -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="feature-item">
-                        <img src="img/6.png" class="img-fluid rounded w-100" alt="Solar Power and Automation Solutions">
+                        <img src="img/gallery-4.png" class="img-fluid rounded w-100" alt="Solar Power and Automation Solutions">
                         <div class="feature-content p-4">
                             <div class="feature-content-inner">
                                 <h4 class="text-white">Solar & Automation</h4>
@@ -430,270 +437,6 @@
     </div>
     <!-- About End -->
 
-<!-- Testimonial Start 
-<div class="container-fluid testimonial py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-            <h4 class="text-primary">Testimonials</h4>
-            <h1 class="display-5 text-white mb-4">What Our Clients Say</h1>
-            <p class="text-white mb-0">
-                At BSR Water Solutions, we take pride in delivering reliable, cost-effective, and innovative solutions 
-                for water purification, wastewater treatment, and solar-powered automation. Here’s what some of our 
-                valued clients have to say about working with us.
-            </p>
-        </div>
-        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-            
-            <div class="testimonial-item p-4">
-                <p class="text-white fs-4 mb-4">
-                    We installed BSR’s Iron Removal Filter at our factory, and the difference in water quality was 
-                    remarkable. Their team was professional, quick, and ensured everything worked perfectly. 
-                    Highly recommend their services!
-                </p>
-                <div class="testimonial-inner">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-1.jpg" class="img-fluid" alt="Client Image">
-                        <div class="testimonial-quote btn-lg-square rounded-circle">
-                            <i class="fa fa-quote-right fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="ms-4">
-                        <h4>Client Name</h4>
-                        <p class="text-start text-white">Industrial Client</p>
-                        <div class="d-flex text-primary">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-item p-4">
-                <p class="text-white fs-4 mb-4">
-                    We chose BSR’s RO + UV purifier for our commercial building. The water is now crystal clear, 
-                    safe, and tastes great. Their after-sales support is excellent and always available when we need them.
-                </p>
-                <div class="testimonial-inner">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-2.jpg" class="img-fluid" alt="Client Image">
-                        <div class="testimonial-quote btn-lg-square rounded-circle">
-                            <i class="fa fa-quote-right fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="ms-4">
-                        <h4>Client Name</h4>
-                        <p class="text-start text-white">Business Owner</p>
-                        <div class="d-flex text-primary">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-item p-4">
-                <p class="text-white fs-4 mb-4">
-                    We hired BSR for our swimming pool filtration system and wastewater treatment solution. 
-                    The setup was smooth, energy-efficient, and eco-friendly. Their expertise and customer care 
-                    really set them apart.
-                </p>
-                <div class="testimonial-inner">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-3.jpg" class="img-fluid" alt="Client Image">
-                        <div class="testimonial-quote btn-lg-square rounded-circle">
-                            <i class="fa fa-quote-right fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="ms-4">
-                        <h4>Client Name</h4>
-                        <p class="text-start text-white">Residential Project</p>
-                        <div class="d-flex text-primary">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
- Testimonial End -->
-
-
-    <!-- Service Start 
-    <div class="container-fluid service py-5">
-        <div class="container service-section py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Service</h4>
-                <h1 class="display-5 text-white mb-4">Explore Waterland Park service</h1>
-                <p class="mb-0 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
-            </div>
-            <div class="row g-4">
-                <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
-                <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-days p-4">
-                        <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p></div>
-                        <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
-                        <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0">Holiday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
-                    </div>
-                </div>
-                <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
-
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item p-4">
-                        <div class="service-content">
-                            <div class="mb-4">
-                                <i class="fas fa-home fa-4x"></i>
-                            </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Private Gazebo</a>
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item p-4">
-                        <div class="service-content">
-                            <div class="mb-4">
-                                <i class="fas fa-utensils fa-4x"></i>
-                            </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Delicious Food</a>
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item p-4">
-                        <div class="service-content">
-                            <div class="mb-4">
-                                <i class="fas fa-door-closed fa-4x"></i>
-                            </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Safety Lockers</a>
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="service-item p-4">
-                        <div class="service-content">
-                            <div class="mb-4">
-                                <i class="fas fa-swimming-pool fa-4x"></i>
-                            </div>
-                            <a href="#" class="h4 d-inline-block mb-3">River Rides</a>
-                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     Service End -->
-
-
-    <!-- Ticket Packages Start 
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="packages-item h-100">
-                        <h4 class="text-primary">Ticket Packages</h4>
-                        <h1 class="display-5 mb-4">Choose The Best Packages For Your Family</h1>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                        </p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Best Waterpark in the world</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Best Packages For Your Family</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Enjoy Various Kinds of Water Park</p>
-                        <p class="mb-5"><i class="fa fa-check text-primary me-2"></i>Win Up To 3 Free All Day Tickets</p>
-                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5"> Book Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="pricing-item bg-dark rounded text-center p-5 h-100">
-                        <div class="pb-4 border-bottom">
-                            <h2 class="mb-4 text-primary">Family Packages</h2>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
-                            <h2 class="mb-0 text-primary">$260,90<span class="text-body fs-5 fw-normal">/family</span></h2>
-                        </div>
-                        <div class="py-4">
-                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>All Access To Waterpark</p>
-                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Get Two Gazebo</p>
-                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Free Soft Drinks</p>
-                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Get Four Lockers</p>
-                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Free Four Towels</p>
-                        </div>
-                        <a href="#" class="btn btn-light rounded-pill py-3 px-5"> Book Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="pricing-item bg-primary rounded text-center p-5 h-100">
-                        <div class="pb-4 border-bottom">
-                            <h2 class="text-dark mb-4">Basic Packages</h2>
-                            <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
-                            <h2 class="text-dark mb-0">$60,90<span class="text-white fs-5 fw-normal">/person</span></h2>
-                        </div>
-                        <div class="text-white py-4">
-                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Get Small Gazebo</p>
-                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Free Soft Drink</p>
-                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Get One Locker</p>
-                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Free Towel</p>
-                        </div>
-                        <a href="#" class="btn btn-dark rounded-pill py-3 px-5"> Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     Ticket Packages End -->
-
-
-    <!-- Attractions Start 
-    <div class="container-fluid attractions py-5">
-        <div class="container attractions-section py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Attractions</h4>
-                <h1 class="display-5 text-white mb-4">Explore WaterLand Park Attractions</h1>
-                <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
-            </div>
-            <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
-                    <img src="img/attraction-1.jpg" class="img-fluid rounded w-100" alt="">
-                    <a href="#" class="attractions-name">Roller Coaster</a>
-                </div>
-                <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
-                    <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                    <a href="#" class="attractions-name">Carousel</a>
-                </div>
-                <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
-                    <img src="img/attraction-3.jpg" class="img-fluid rounded w-100" alt="">
-                    <a href="#" class="attractions-name">Arcade Game</a>
-                </div>
-                <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
-                    <img src="img/attraction-4.jpg" class="img-fluid rounded w-100" alt="">
-                    <a href="#" class="attractions-name">Hanging Carousel</a>
-                </div>
-                <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
-                    <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                    <a href="#" class="attractions-name">Carousel</a>
-                </div>
-            </div>
-        </div>
-    </div>
-     Attractions End -->
 
     <!-- Projects Section -->
         <section id="projects" class="projects section mx-2" style="background: linear-gradient(120deg, #f8fafc 0%, #e3e9f7 100%); padding: 60px 0 40px 0;">
@@ -705,9 +448,9 @@
                     <div class="projects-filters-scroll d-inline-flex flex-nowrap w-100 justify-content-center">
                         <button class="btn btn-outline-primary mx-1 mb-2" data-filter="all">All</button>
                         <button class="btn btn-outline-primary mx-1 mb-2" data-filter="vessel">Vessels</button>
-                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="Dispenser">Dispensers</button>
-                        <!-- <button class="btn btn-outline-primary mx-1 mb-2" data-filter="repairs">Repairs</button>
-                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="design">Design</button> -->
+                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="dispenser">Coolers</button>
+                        <button class="btn btn-outline-primary mx-1 mb-2" data-filter="purifiers">Purifiers</button>
+                        <!-- <button class="btn btn-outline-primary mx-1 mb-2" data-filter="design">Design</button> -->
                     </div>
                 </div>
                 <div class="row g-4 projects-grid">
@@ -751,8 +494,38 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="vessel">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/vessel-5.jpg" class="card-img-top rounded-top" alt="vessel 4">
+                                <a href="img/vessel-5.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">16-65 VESSAL + 20 PREFILTER + 20 JAMBO PREFILTER WITH PUMB + IRON,HEARDNESS, ALKALINITY,TERBIDITY REMOVER + With CLORINETION</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="vessel">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/vessel-6.jpg" class="card-img-top rounded-top" alt="vessel 4">
+                                <a href="img/vessel-6.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">16-65 VESSAL + 20 PREFILTER + 20 JAMBO PREFILTER WITH PUMB + IRON,HEARDNESS, ALKALINITY,TERBIDITY REMOVER + With CLORINETION</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="vessel">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/vessel-7.jpg" class="card-img-top rounded-top" alt="vessel 4">
+                                <a href="img/vessel-7.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">16-65 VESSAL + 20 PREFILTER + 20 JAMBO PREFILTER WITH PUMB + IRON,HEARDNESS, ALKALINITY,TERBIDITY REMOVER + With CLORINETION</div> -->
+                            </div>
+                        </div>
+                    </div>
                     <!-- Project Card 5 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-1.png" class="card-img-top rounded-top" alt="cooler 1">
@@ -762,7 +535,7 @@
                         </div>
                     </div>
                     <!-- Project Card 6 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-2.png" class="card-img-top rounded-top" alt="cooler 2">
@@ -772,7 +545,7 @@
                         </div>
                     </div>
                     <!-- Project Card 7 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-3.jpg" class="card-img-top rounded-top" alt="cooler 3">
@@ -781,8 +554,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 7 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <!-- Project Card 8 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-4.jpg" class="card-img-top rounded-top" alt="cooler 4">
@@ -791,8 +564,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 7 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <!-- Project Card 9 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-5.jpg" class="card-img-top rounded-top" alt="cooler 4">
@@ -801,8 +574,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 7 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <!-- Project Card 10 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-6.jpg" class="card-img-top rounded-top" alt="cooler 6">
@@ -811,8 +584,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 7 -->
-                    <div class="col-lg-4 col-md-6 project-card" data-category="Dispenser">
+                    <!-- Project Card 11 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="dispenser">
                         <div class="project-item card h-100 shadow-sm border-0">
                             <div class="project-img-wrapper position-relative">
                                 <img src="img/cooler-7.jpg" class="card-img-top rounded-top" alt="cooler 7">
@@ -821,6 +594,58 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Project Card 12 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="purifiers">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/purifiers-1.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/purifiers-1.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 13 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="purifiers">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/purifiers-2.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/purifiers-2.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 14 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="purifiers">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/purifiers-3.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/purifiers-3.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 15 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="purifiers">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/purifiers-4.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/purifiers-4.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 16 -->
+                    <div class="col-lg-4 col-md-6 project-card" data-category="purifiers">
+                        <div class="project-item card h-100 shadow-sm border-0">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="img/purifiers-5.jpg" class="card-img-top rounded-top" alt="cooler 7">
+                                <a href="img/purifiers-5.jpg" class="project-zoom-btn btn btn-light btn-lg-square rounded-circle position-absolute top-50 start-50 translate-middle glightbox" title="building 11"><i class="bi bi-zoom-in"></i></a> 
+                                <!-- <div class="project-name-overlay position-absolute bottom-0 start-0 w-100 text-center py-2 px-2" style="background:rgba(10,37,64,0.82); color:#fff; font-weight:600; font-size:1.08rem; letter-spacing:0.5px;">DELTA, MAGNA EDGE series Elegant Cooling. Durable Performance Hot/Normal/Cold Options</div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 

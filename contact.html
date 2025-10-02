@@ -42,48 +42,55 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-dark">BSR</h1>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="d-flex w-100 align-items-center justify-content-between flex-row" style="gap:1.2rem;">
+                <a href="index.html" class="navbar-brand p-0 mb-0" style="flex-shrink:0;">
+                    <h1 class="display-6 text-primary mb-0" style="font-size:2rem;">BSR</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <!-- <a href="#about" class="nav-item nav-link">About</a> -->
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
-                        
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Our Feature</a>
-                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                                <a href="attraction.html" class="dropdown-item">Attractions</a>
-                                <a href="package.html" class="dropdown-item">Ticket Packages</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                        <!-- <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                    <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a> -->
+                <div class="navbar-nav flex-row align-items-center justify-content-center flex-grow-1" style="gap: 1.2rem;">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3" style="flex-shrink:0;">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a> -->
+            <style>
+                .navbar .d-flex {
+                    flex-wrap: nowrap !important;
+                }
+                .navbar-nav {
+                    gap: 1.2rem;
+                }
+                @media (max-width: 991.98px) {
+                    .navbar .d-flex {
+                        flex-direction: row !important;
+                        flex-wrap: nowrap !important;
+                        align-items: center !important;
+                        justify-content: space-between !important;
+                    }
+                    .navbar-nav {
+                        flex-direction: row !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        gap: 1.2rem;
+                    }
+                    .navbar-brand h1 {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            </style>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
 
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
